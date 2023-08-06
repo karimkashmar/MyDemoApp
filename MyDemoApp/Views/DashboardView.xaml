@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyDemoApp.Views.DashboardView"
+             Title="DashboardView">
+
+    <!-- Featured Restaurants -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Text="Featured" />
+        <CarouselView Grid.Row="1" ItemsLayout="HorizontalList" HorizontalOptions="CenterAndExpand">
+
+        </CarouselView>
+        <ActivityIndicator Grid.Row="1" IsRunning="True"/>
+    </Grid>
+
+
+
+</ContentPage>
